@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    font-size: x-large;
+}
+
+.justify {
+    justify-content: flex-end;
+}
+
+.about {
+    text-align: center;
+}
+
+.bg-welcome {
+    height: 90vmin;
+    background: url("../img/4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+h2 {
+    text-shadow: 2px;
+
+}
+
+p {
+    font-size: large;
+}
+
+.text-welcome {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.photo {
+    width: 25vw;
+    margin-left: 200px;
+}
+
+.pb {
+    padding-bottom: 1.5rem;
+}
+
+.mb {
+    margin-top: -2rem;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+hr {
+    font-weight: bolder;
+}
+
+.contact {
+    width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-link {
+        font-size: larger;
+    }
+
+    .justify {
+        justify-content: center;
+    }
+
+    .container-fluid {
+        padding-top: 1rem;
+    }
+
+    h2 {
+        font-size: 17.5px;
+    }
+
+    h4 {
+        font-size: 16.5px;
+    }
+
+    .bg-welcome {
+        height: 60vmin;
+        background: url("");
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+
+    .text-welcome {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 60%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .photo {
+        width: 60vw;
+        margin-left: 50px;
+    }
+
+    .foot {
+        margin-top: -90px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .contact {
+        margin-top: -70px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .barcode {
+        margin-top: -100px;
+        padding-bottom: -20px;
+        height: 120px;
+        margin-left: 170px;
+    }
+
+    .img-thumbnail {
+        width: 50px;
+    }
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
