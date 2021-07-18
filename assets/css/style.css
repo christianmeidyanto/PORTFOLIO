@@ -93,10 +93,9 @@ hr {
         font-size: larger;
     }
 
-    .justify {
-        justify-content: center;
+    .min-centered{
+        padding-right: 80px;
     }
-
     .container-fluid {
         padding-top: 1rem;
     }
@@ -111,7 +110,7 @@ hr {
 
     .bg-welcome {
         height: 60vmin;
-        background: url("");
+        background: url("../img/4.png");
         background-size: cover;
         background-repeat: no-repeat;
         filter: blur(2px);
@@ -135,12 +134,12 @@ hr {
     }
 
     .photo {
-        width: 60vw;
-        margin-left: 50px;
+        width: 50vw;
+        margin-left: 70px;
     }
 
     .foot {
-        margin-top: -90px;
+        margin-top: -60px;
         font-size: 15px;
         text-align: center;
     }
@@ -148,14 +147,14 @@ hr {
     .contact {
         margin-top: -70px;
         text-align: center;
-        margin-left: 50px;
+        margin-left: 70px;
     }
 
     .barcode {
         margin-top: -100px;
         padding-bottom: -20px;
         height: 120px;
-        margin-left: 170px;
+        margin-left: 185px;
     }
 
     .img-thumbnail {
